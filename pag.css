@@ -1,0 +1,10 @@
+body{
+	animation-name: da;
+	animation-duration: 1s;
+	animation-direction: alternate-reverse;
+	animation-iteration-count: infinite;
+}
+@keyframes da{
+	25%{background-color: grey}
+	50%{background-color: black}
+}

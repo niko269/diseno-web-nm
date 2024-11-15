@@ -1,0 +1,45 @@
+actividad banco pasaje de csharp a java
+
+package trabajo;
+import javax.swing.JOptionPane;
+public class Trabajo {
+    public static void main(String[] args) {
+        int num = 0;
+        int saldo = 500;
+    do{
+    System.out.println("--------------------------");
+    System.out.println("--hola xxxxx, bienvenido--");
+    System.out.println("--al banco valamadaragan--");
+    System.out.println("--------------------------");
+    System.out.println("---ingrese la operacion---");
+    System.out.println("----que desee aplicar:----");
+    System.out.println("--------------------------");
+    System.out.println("----consultar saldo=1 ----");
+    System.out.println("----retirar dinero=2------");
+    System.out.println("----depositar dinero=3----");
+    System.out.println("----salir del cajero=4----");
+    System.out.println("--------------------------");
+     num=Integer.parseInt(JOptionPane.showInputDialog("ingrese el num"));
+    
+    switch (num){
+        case 1: JOptionPane.showMessageDialog(null, "su saldo es de: "+saldo);
+        break;
+        case 2: int re=Integer.parseInt(JOptionPane.showInputDialog("cuanto quiere retirar: "));
+        saldo=saldo-re;
+            JOptionPane.showMessageDialog(null, "su saldo es de: "+saldo);
+        break;
+        case 3: int de=Integer.parseInt(JOptionPane.showInputDialog("Cuanto quiere depositar: "));
+        saldo=saldo+de;
+        JOptionPane.showMessageDialog(null, "su saldo es de: "+saldo);
+        break;
+        case 4: 
+            JOptionPane.showMessageDialog(null, "saliendo del programa..."); 
+        break;
+        
+        default: JOptionPane.showMessageDialog(null, "su saldo es de: "+saldo); break;
+    }
+    
+    }while (num!=4); 
+    
+    }
+}

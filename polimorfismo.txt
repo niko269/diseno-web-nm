@@ -1,0 +1,16 @@
+polmorfismo
+el polmorfismo en java es la capacidad de que objetos de diferentes clases puedan ser tratados como si fueran de una misma clase 
+en ciertos contextos.
+Esto significa de que un mismo metodo puede tener diferentes comportamientos dependiendo del objeto al que se aplique, por ejemplo:
+en un grupo de animales, todos son animales, pero cada uno tiene caracteristicas y comportamientos unicos, un perro ladra, un gato 
+maulla, un pajaro vuela. el polimorfismo en programacion permite que objetos de diferentes clases, pero relacionados por herencia,
+puean ser tratados como si fueran de la misma clase en ciertos contextos
+
+class Animal{
+void Sonido(){
+system.out.println("hace un sonido");
+}}
+class Perro extend Animal{
+void Sonido{
+system.out.println("hace un sonido: guau ");
+}}

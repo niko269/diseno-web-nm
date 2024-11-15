@@ -1,0 +1,7 @@
+body { 
+    background-image: url("imgcheta.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: rgb(118, 176, 179);
+}

@@ -1,0 +1,105 @@
+java:
+java es un lenguaje de programacion de alto nivel y una plataforma informatica desarrollada por sunmicrosystems, ahora parte de oracle corporation
+java fue diseñado con el objetivo de ser un lenguaje independiente de la plataforma y portatil, permitiendo que los programas escritos en java 
+puedan ejecutarse en cualquier dispositivo que tenga una maquina virtual  java (jvm).
+
+Caracteristicas principales:
+1-orientada a objetos: 
+java es un lenguaje de programacion orientada a objetos, lo que significa que utiliza objetos para modelar datos y comportamientos 
+2-portabilidad:
+el lema de java es "escribe una vez, ejecuta en cualquier lugar", se debe a su independencia de la plataforma
+3-seguridad:
+proporciona un entorno seguro para la ejecucion de programas. incluye caracteristicas, la gestion automatica de la memoria, un modelo de seguridad 
+robusto y un sistema de verificacion de bytecode
+4-multihilo:
+soporta la programacion multihilo, lo que permite a los desarrolladores escribir programas que puedan realizar varias tareas simultaneamente. Esto es
+util para aplicaciones que requieran un alto rendimiento y una mayor capacidad de respuesta.
+5-recoleccion de basura:
+la gestion de memoria en java se maneja automaticamente atraves de un proceso conocido como garbajecolection, que elimina objetos que ya no son 
+nesesarios para liberar memoria
+6-bibliotecas estandar:
+ofrece una extensa biblioteca estandar (api) que proporciona una gran cantidad de funcionalidad predefinida, facilitando el desarrollo de aplicaciones.
+estas bibliotecas incluyen utilidades para manejo de datos, entrada-salida, redes, interfaces graficas de usuario (gui), y mucho mas. 
+
+Estructura basica en java:
+1-clase:la unidad basica de un programa java, cada programa debe tener al menos una clase 
+2-metodo:una funcion dentro de una clase. el metodo main es el punto de entrada de cualquier aplicacion java.
+3:declaracion y sentencias:instrucciones del programa que ejecuta 
+
+Public class HomerSimpson{
+public static void main (String[]args){
+System.out.printLn/writeLn("hello world");
+}} 
+
+ejemplo:
+package ejercicio1;
+import java.util.Scanner;
+public class Ejercicio1 {
+public static void main(String[] args) {
+    
+       System.out.println("tumba la casa mami");  
+       var nombre="chesica";
+       System.out.println(nombre);
+       var apellido="lopezcado";
+       System.out.println(nombre+apellido);
+       System.out.println("nombre: " +nombre+" apellido: "+apellido);
+       var n=2;
+       var n1=6;
+       System.out.println(n+n1);
+       System.out.println(nombre+n+n1);
+       System.out.println(nombre+(n+n1));
+       System.out.println((n*n1)+(n-n1));
+       Scanner sc;
+       sc=new Scanner(System.in);
+       System.out.println("ingrese su edad");
+       var edad = sc.nextInt();
+       }} 
+
+ejercicio:
+1)pedirle al usuario que ingrese su edad y muestre la que tendra el año proximo
+2)realizar un programa en java que me permita ingresar el año actual y el de nacimiento del usuario.debe calcular su edad suponiendo que en el año en 
+curso el usuario ya a cumplido años 
+3)realizar un programa en java que me permita ingresar 3 notas y me muestre el promedio de la misma 
+
+respuestas
+
+1)
+package ejercicio1;
+import java.util.Scanner;
+public class Ejercicio1 {
+public static void main(String[] args) {
+          Scanner sc;
+          sc=new Scanner (System.in);
+          System.out.println("ingrese su edad:");
+          int edad=sc.nextInt();
+          int año=edad+1;
+          System.out.println("el proximo año tendra: "+año); 
+}}
+
+2)
+package ejercicio1;
+import java.util.Scanner;
+public class Ejercicio1 {
+public static void main(String[] args) {
+          Scanner sc;
+          sc=new Scanner (System.in);
+          System.out.println("ingrese la fecha de nacimiento:");
+          int edad=sc.nextInt();
+           edad=2024-edad;
+          System.out.println("su edad es: "+edad); 
+}}
+
+3)
+ package ejercicio1;
+import java.util.Scanner;
+public class Ejercicio1 {
+public static void main(String[] args) {
+    Scanner  num; 
+            num=new Scanner(System.in);
+            System.out.println("ingrese los 3 numeros: ");
+    int un=num.nextInt();
+    int ds=num.nextInt();
+    int tr=num.nextInt();
+    int res=(un+ds+tr)/3;
+    System.out.println("su promedio es de: "+res);
+    }} 

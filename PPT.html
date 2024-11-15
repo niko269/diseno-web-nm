@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra, Papel o Tijera</title>
+    <link rel="stylesheet" href="PPT.css">
+</head>
+<body>
+    <h1>¡Juguemos a Piedra, Papel o Tijera!</h1>
+    <button onclick="jugar('piedra')">Piedra</button>
+    <button onclick="jugar('papel')">Papel</button>
+    <button onclick="jugar('tijera')">Tijera</button>
+    <p id="resultado"></p>
+
+    <script>
+        function obtenerEleccionComputadora() {
+            const opciones = ['piedra', 'papel', 'tijera'];
+            const indiceAleatorio = Math.floor(Math.random() * opciones.length);
+            return opciones[indiceAleatorio];
+        }
+
+        function determinarGanador(jugador, computadora) {
+            if (jugador === computadora) {
+                return 'Empate';
+            } else if (
+                (jugador === 'piedra' && computadora === 'tijera') ||
+                (jugador === 'papel' && computadora === 'piedra') ||
+                (jugador === 'tijera' && computadora === 'papel')
+            ) {
+                return '¡Ganaste!';
+            } else {
+                return 'Perdiste';
+            }
+        }
+
+        function jugar(eleccionJugador) {
+            const eleccionComputadora = obtenerEleccionComputadora();
+            const resultado = determinarGanador(eleccionJugador, eleccionComputadora);
+            document.getElementById('resultado').innerText = `Tú elegiste: ${eleccionJugador}\nLa computadora eligió: ${eleccionComputadora}\nResultado: ${resultado}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,161 @@
+1)	#include <iostream>
+using namespace std;
+int main() {
+	int matriz [3][4];
+	int sum=0;
+	for (int i=0;i<3;i++){
+		for (int j=0;j<4;j++){
+			cout<<"ingrese un numero para la pocision ["<<i<<"] ["<<j<<"]:"<<endl;
+			cin>>matriz [i][j];
+		}} 
+	for (int i=0;i<3;i++){
+		for (int j=0;j<4;j++){
+			if (matriz[i][j]%2==0){
+				sum+=matriz [i][j];
+			}}}
+	cout<<"La suma de los numeros pares es: "<<sum<<endl;
+	return 0;
+	
+2)	#include <iostream>
+using namespace std;
+int main() {
+	int matriz [4][4];
+	
+	for (int i=0;i<4;i++){
+		for (int j=0;j<4;j++){
+			cout<<"ingrese un numero para la pocision ["<<i<<"] ["<<j<<"]:"<<endl;
+			cin>>matriz [i][j];
+}}
+	
+	
+	int may= matriz[0][0];
+	int fmay=0; int cmay=0;
+	
+	for (int i=0;i<4;i++){
+		for (int j=0;j<4;j++){
+			if (matriz [i][j]>may){
+				may=matriz [i][j];
+				fmay=i; cmay=j;    }}}
+			
+	cout<<"el num mayor es: "<<may<<endl;
+	cout<<"se encuentra en: ["<<fmay<<","<<cmay<<"]"<<endl;	
+	return 0;
+}
+
+3)	#include <iostream>
+using namespace std;
+int main() {
+	int matriz [4][4]; int sfila [4]={0}; int scol [4]={0};
+	for (int i=0;i<4;i++){
+		for (int j=0;j<4;j++){
+			cout<<"ingrese un numero para la pocision ["<<i<<"] ["<<j<<"]:"<<endl;
+			cin>>matriz [i][j];
+		}}
+	for (int i=0;i<4;i++){
+		for (int j=0;j<4;j++){
+			sfila[i]=matriz [i][j];
+		}}
+	for (int i=0;i<4;i++){
+		for (int j=0;j<4;j++){
+			scol[j]=matriz [i][j];	}
+	cout<<"matriz: "<<endl;
+	for (int i=0;i<4;i++){
+		for (int j=0;j<4;j++){
+			cout<<matriz [i][j]<<" ";}		
+cout<<endl;	 }
+	cout<<"suma de cada fila: "<<endl;
+	for (int i=0;i<4;i++){
+	cout<<"fila "<<i<<endl;		}	
+cout<<"suma de cada columna: "<<endl;
+		for (int j=0;j<4;j++){
+			cout<<"columna "<<j<<":"<<scol[j]<<endl;	}
+	return 0;}
+
+4)	#include <iostream>
+using namespace std;
+int main (){
+	
+	int mat [3][4];
+	for (int i=0;i<3;i++){
+		for (int j=0;j<4;j++){
+			cout<<"ingrese un numero para la pocision ["<<i<<"] ["<<j<<"]:"<<endl;
+			cin>>mat [i][j];
+		}}	
+int Smax=0; int Cmax=0;
+
+for (int j=0;j<4;j++){
+	int Scol=0;
+	for (int i=0;i<3;i++){
+		Scol+=mat [i][j];		}
+		if (Scol>Smax){
+			Smax=Scol;
+			Cmax=j;
+		}}
+	cout<<"la columna con mayor suma es la "<<Cmax+1<<endl;
+	cout<<"la suma de la columna es "<<Smax<<endl;
+	
+return 0;
+}
+5)	#include <iostream>
+using namespace std;
+int main (){
+	int mat [3][4];
+
+	for (int i=0;i<3;i++){
+		for (int j=0;j<4;j++){
+			cout<<"ingrese un numero para la pocision ["<<i<<"] ["<<j<<"]:"<<endl;
+			cin>>mat [i][j];
+		}}
+int Smax=0; int Cmax=0;
+
+for (int j=0;j<4;j++){
+	int Scol=0;
+	for (int i=0;i<3;i++){
+		Scol+=mat [i][j];
+		}
+		if (Scol>Smax){
+			Smax=Scol;
+			Cmax=j;
+		}}
+	
+	cout<<"la columna con mayor suma es la "<<Cmax+1<<endl;
+	cout<<"la suma de la columna es "<<Smax<<endl;
+	return 0;	}
+6)	#include <iostream>
+#include <vector>
+using namespace std;
+int main (){
+	int mat[4][4];  int diagonal_principal; 
+
+	for (int i=0;i<3;i++){
+		for (int j=0;j<4;j++){
+			cout<<"ingrese un numero para la pocision ["<<i<<"] ["<<j<<"]:"<<endl;
+			cin>>mat [i][j];
+		}}
+	
+for (int i=0;i<4;i++){
+	for (int j=0;j<4;j++){
+    diagonal_principal+=(mat[i][j]);
+}}
+
+cout<<"el arreglo resultante es: ";
+for (int i=0;i<diagonal_principal;i++){
+	cout<<diagonal_principal[i];
+}
+
+return 0;	}
+7)	#include <iostream>
+using namespace std;
+int main (){
+	int mat[4][4]={0};  
+
+	for (int i=0;i<4;i++){
+	mat [i][i]=1;		}
+	
+for (int i=0;i<4;i++){
+	for (int j=0;j<4;j++){
+		cout<< mat[i][j]<<" ";		}
+	cout<<endl;	}
+
+return 0;
+}

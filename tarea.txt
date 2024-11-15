@@ -1,0 +1,44 @@
+ejercicios
+diseñar una clase llamada cuenta_corriente, sabiendo que los datos necesarios son: 
+saldo, limite de descubierto (cantidad de dinero que se permite sacar de una cuenta que ya está a cero),
+nombre y DNI del titular. Las operaciones tipicas con una cuenta corriente son: 
+-crear la cuenta: se necesita el nombre y el DNI del titular. El saldo inicial sera cero y el limite de descubierto
+sera -$50.
+-Sacar dinero: solo se podra sacar dinero hasta el limete de descubierto. El metodo debe indicar si ha sido posible
+llevar a cabo la operacion.
+-Ingresar dinero: se incrementa el saldo.
+-Mostrar informacion: muestra la informacion disponible de la cuenta corriente.
+
+
+package trabajp;
+    public class CC {
+   private double saldo;
+   private double lim_desc;
+   private String nombre;
+   private String dni;
+   
+   public CC (String nombre, String dni){
+   this.saldo=0; this.lim_desc=-50.0; this.nombre=nombre; this.dni=dni;
+   }
+   
+   
+   public boolean Extraer() {
+   
+   }
+   
+   public double Ingresar() {
+   
+   return;
+   }
+   
+   public void MostrarInfo (){
+   
+   }
+
+package dominio;
+import trabajp.CC;
+public class prueba {
+    public static void main(String[] args) {
+        
+    }
+}

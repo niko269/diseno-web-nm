@@ -1,0 +1,37 @@
+public class Main
+
+{
+	
+  public static void main(String[] args) 
+	
+{
+		
+                System.out.println("Bienvenido, Ingrese un numero del 1 al 100");
+
+		int num = lector.nextInt();
+
+		
+if (num > 0 && num < 101)
+ 
+		
+System.out.println("Le dije que un numero del 1 al 100, ni mas ni menos cñor -_-");
+
+		
+if (numero % 2 == 0)
+		
+           
+                System.out.println(numero + " es un numero par.");
+        
+                else 
+        
+            
+                System.out.println(numero + " es un numero impar.");
+        
+
+
+        
+                lector.close();
+
+	}
+
+}

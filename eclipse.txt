@@ -1,0 +1,54 @@
+ejercicio 1::::::::::::::::::::::::
+crear una clase llamada "persona" que tenga los sig atributos:
+nombre:cadena de txt que almacene el nombre de la persona 
+edad:un numero entero que almacene la edad de la persona 
+altura: numero doble que almacene la altura de la persona 
+sexo: una cadena de txt que almacene el genero de la persona 
+
+ejercicio 2:::::::
+en la clase persona, definir un constructor que permita inicializar los atributos nombre, edad, altura y sexo cuando se crea un 
+objeto de tipo persona
+
+ejercicio 3::::::::::: 
+definir un metodo en la clase persona llamado "mostrar info ()" que imprima en consola todos los datos de la persona 
+
+ejercicio 4:::::::::::::::::::::
+crear el metodo es "mayor de edad ()" como en el ejercicio anterior, que devuelva un valor buleano indicando si la persona es 
+mayor de edad 
+
+package Ejemplo1;
+public class Persona {
+	
+	   //atributos
+    String nombre;
+    int edad;
+    double altura;
+    String sexo;
+    //metodos 
+   public void mostrarInfo(){
+        System.out.println("nombre: "+nombre);
+        System.out.println("edad: "+edad);
+        System.out.println("altura: "+altura);
+        System.out.println("sexo: "+sexo);
+    }
+    public boolean esMayor(){
+        return edad >= 18;
+    }
+}
+
+package Ejemplo1;
+
+public class PruebaPersona {
+
+	public static void main(String[] args) {
+		Persona p1 = new Persona();
+	      p1.nombre="juan";
+	      p1.edad=23;
+	      p1.sexo="Femenino";
+	      p1.altura=1.70;
+	      p1.mostrarInfo();
+	      
+	      boolean valor= p1.esMayor();
+	      System.out.print("Es mayor de edad? "+valor);
+		}}
+

@@ -1,0 +1,18 @@
+1)	Un alumno desea saber cual es su calificación final en la materia. Dicha calificación se compone de las siguientes:
+55% de promedio de parciales
+30% de la calificación del ultimo parcial
+15% de la calificación del ultimo trabajo 
+2)	Hacer un programa que tenga un menú con estas opciones
+	a)	Elevar n a una potencia x
+	b)	Sacar raíz cuadrada de n
+	c)	N multiplicado por n
+	d)	Salir
+3)	Realizar un programa que me permita ingresar x números y calcular max y min entre ellos
+4)	Leer por teclado una serie de nums indicados por el usuario. El programa debe indicar si los num están ordenados de forma ascendente, descendente o desordenados}
+5)	Hacer un  programa que almacene números en una matriz 3x4, imprimir la suma de los números pares en la matriz.
+6)	Realizar un programa que rellene una matriz 5x5 que almacene * en forma de triangulo y las demás posiciones en 0
+7)	Diseñar un programa que muestre un menú al usuario con estas opciones:
+	a)	Potencia
+	b)	Raíz cuadrada
+	c)	Salir
+Que cada opción la realice una función o proceso. 

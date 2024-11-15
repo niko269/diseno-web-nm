@@ -1,0 +1,52 @@
+package persona;
+
+class EmpleadoTiempoCompleto {
+public String nombre;
+public int edad;
+public double SalarioBase;
+public double Bonificacion;
+//constructor
+public etc(String nombre, int edad, double SalarioBase, double Bonificacion){
+this.nombre=nombre;
+this.edad=edad;
+this.SalarioBase=SalarioBase;
+this.Bonificacion=Bonificacion;
+}
+//calcular salario
+public double cs(){
+return SalarioBase*Bonificacion;
+}
+}
+
+package persona;
+
+class EmpleadoTiempoParcial {
+    public String nombre;
+    public int edad;
+    public double SalarioxH;
+    public double HTrabajadas;
+    //constructor
+    public etp(String nombre, int edad, double sph, double ht){
+    this.nombre=nombre;
+    this.edad=edad;
+    this.SalarioxH=SalarioxH;
+    this.HTrabajadas=HTrabajadas;
+    }
+    public double cs(){
+    return HTrabajadas+SalarioxH;
+ 
+   }
+}
+
+package persona;
+public class NewMain {
+
+    public static void main(String[] args) {
+        etc emp1;
+        emp1 = new etc("juan", 30, 500.0, 1.0);
+        etp emp2;
+        emp2 = new etp("maria", 29, 200.0, 5.0);
+        
+        System.out.println("salario de "+emp1.nombre+": "+emp1.cs());
+        System.out.println("salario de "+emp2.nombre+": "+emp2.cs());
+    }  }

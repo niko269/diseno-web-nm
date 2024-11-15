@@ -1,0 +1,25 @@
+1) create database empresa
+
+2)CREATE TABLE productos(
+id int PRIMARY KEY,
+nombre varchar (10) NOT NULL,
+descripcion VARCHAR (10) NOT NULL,
+precio DECIMAL (5,2) NOT NULL,
+fecha_ingreso date NOT NULL
+)
+
+3)insert into productos (id, nombre, descripcion, precio, fecha_ingreso) values (`1`, `yerba`, `des`, 20.00, `2024-12-13`)
+
+4)CREATE TABLE clientes( 
+id int PRIMARY KEY AUTO_INCREMENT, 
+nombre varchar (20), 
+email varchar (30)not null, 
+telefono int (10) not null, 
+fecha_registro date 
+)
+
+5)UPDATE `productos` SET `precio` = '75.00' WHERE `productos`.`id` = 1;
+
+6)delete from productos where id=1;
+
+drop table clientes;
